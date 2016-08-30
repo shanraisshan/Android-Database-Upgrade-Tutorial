@@ -35,3 +35,25 @@ Different Scenarios
 | Incremental-Upgrade | 2->3    | 3 |
 | Incremental-Upgrade | 2->4    | 4 |
 | Incremental-Upgrade | 3->4    | 4 |
+
+
+Android App
+----
+All 4 Android apps are available at [Android-Applications](https://github.com/shanraisshan/Android-Database-Upgrade-Tutorial/tree/master/Android-Applications) folder.
+
+1. DBv1
+2. DBv2
+3. DBv3
+4. DBv4
+
+**Apk:**
+
+Apk is avaiable at [Shayan](https://github.com/shanraisshan/Android-Database-Upgrade-Tutorial/tree/master/Android-Applications/DBv1/Shayan) folder of each app.
+
+**Database:**
+
+The SQLite database of the application that is generally located at
+````java
+//data/data/<Your-Application-Package-Name>/databases/<your-database-name>
+````
+is also pulled out from internal location using [Android-Database-Viewer](https://github.com/shanraisshan/Android-Database-Viewer) class named [DatabaseUtil.java](https://github.com/shanraisshan/Android-Database-Viewer/blob/master/DatabaseUtil.java), and is saved to [Shayan](https://github.com/shanraisshan/Android-Database-Upgrade-Tutorial/tree/master/Android-Applications/DBv1/Shayan) folder of each app.
